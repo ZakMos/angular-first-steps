@@ -8,4 +8,5 @@ import { Component } from '@angular/core';
 export class AppComponent {
   name='Zakaria Moslim';
   age = 43;
+  source = 'https://picsum.photos/200/300';
 }
