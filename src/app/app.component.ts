@@ -12,6 +12,16 @@ export class AppComponent {
   age = 43;
   source = 'https://picsum.photos/200/300';
 
+  isAuth:boolean=false;
+
+  logState:string="Login"
+
+  toggle() {
+    this.isAuth = !this.isAuth;
+    this.logState= this.isAuth? "Logout":"Login";
+  }
+
+
   myFunction() {
       // console.log("click event");
       alert('Hello World');
