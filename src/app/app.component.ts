@@ -9,6 +9,7 @@ export class AppComponent {
   colors=['Red', 'White', 'Yellow', 'Green', 'Black'];
 
   name='Zakaria Moslim';
+  currentDate = new Date();
   age = 43;
   source = 'https://picsum.photos/200/300';
 
