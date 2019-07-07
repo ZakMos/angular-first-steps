@@ -1,5 +1,31 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
+<div class="container">
+<nav class="navbar navbar-default fixed-top navbar-dark bg-primary" >
+  <div class="navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="category">Category</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="article">Article</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="login">Login</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="about">About</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+</div>
+
+<router-outlet></router-outlet>
+
+<!-- <div style="text-align:center">
   <h1>
     Welcome to {{ title }}!
   </h1>
@@ -9,8 +35,8 @@
 <h1>Hello {{ name  | uppercase }} Age = {{ age }}</h1>
 <h2>Today is {{ currentDate | date:"dd/MM/yyyy" }}</h2>
 <h2>Using Currency {{ 6548184 | currency:"EUR"}}</h2>
-<app-about></app-about>
-<app-login></app-login>
+
+
 
 <select class="" name="" (change)='onChange()'>
   <option  *ngFor="let color of colors">
@@ -41,4 +67,4 @@
 
 <ng-template #error>
   <p class="error">Please, Login to our App</p>
-</ng-template>
+</ng-template> -->
